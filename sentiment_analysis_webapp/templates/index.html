@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Prediction App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sentiment Prediction App</h1>
+        <form method="POST" action="/predict">
+            <textarea name="text" rows="2" cols="40" placeholder="Enter text here..."></textarea><br>
+            <input type="submit" value="Predict" class="btn">
+            <a href="/clear" class="btn">Clear</a>
+        </form>
+
+        {% if prediction %}
+        <div class="result">
+            <h2>Prediction Result:</h2>
+            <p><strong>Input Text:</strong></p>
+            <p>{{ text }}</p>
+            <p><strong>Prediction:</strong> {{ prediction }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+
+</html>

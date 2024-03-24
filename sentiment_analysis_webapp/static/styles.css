@@ -1,0 +1,83 @@
+/* Default background color and font */
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease-in-out; /* Smooth transition for color change */
+    animation: changeBackgroundColor 30s infinite; /* Animation loop for 30 seconds */
+}
+
+/* Keyframes for background color animation */
+@keyframes changeBackgroundColor {
+    0% { background-color: #D88C9A; } /* Start color */
+    25% { background-color: #F2D0A9; } /* Midway color 1 */
+    50% { background-color: #F1E3D3; } /* Midway color 2 */
+    75% { background-color: #99C1B9; } /* Midway color 3 */
+    100% { background-color: #8E7DBE; } /* End color (same as start for loop effect) */
+}
+
+/* Center align headings */
+h1, h2 {
+    text-align: center;
+}
+
+/* Styles for result container */
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #000000; /* Text color for result */
+    border-radius: 5px;
+}
+
+/* Margin and styles for result headings */
+.result h2 {
+    margin-bottom: 10px;
+}
+
+/* Margin for result paragraphs */
+.result p {
+    margin-bottom: 5px;
+}
+
+/* Button styles */
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Textarea styles */
+textarea {
+    width: 100%;
+    padding: 15px; /* Increase padding for a bigger appearance */
+    margin-bottom: 10px;
+    background-color: #ffffff; /* White background color for the text area */
+    color: #000000; /* Text color for the text area */
+    border: 1px solid #ccc; /* Light border color */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    font-size: 18px; /* Increase font size for better readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Specify font stack */
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure full viewport height */
+    padding: 20px; /* Padding for the container */
+}
+
+/* Center content within container */
+.center-content {
+    text-align: center;
+    max-width: 500px; /* Limit the width of the content */
+}
